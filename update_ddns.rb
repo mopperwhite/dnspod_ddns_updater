@@ -67,8 +67,11 @@ class DNSPodUpdater
     end
 end
 
+$confhome = File.join Dir.home, '.dnspod_updater'
+$config = File.join $confhome, 'config.yaml'
+$cache = File.join $confhome, 'cache.yaml'
 if __FILE__ == $0
-    u = DNSPodUpdater.new('config.yaml', 'cache.yaml')
+    u = DNSPodUpdater.new($config, $cache)
     res = u.update_dyn_dns
     puts "Succeed" unless res.nil?
 end
