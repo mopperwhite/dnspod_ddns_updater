@@ -1,0 +1,3 @@
+:api:
+    :id: 'Your DNSPod API Token ID'
+    :token: 'Your DNSPod API Token'
