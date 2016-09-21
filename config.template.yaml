@@ -1,3 +1,6 @@
-:api:
-    :id: 'Your DNSPod API Token ID'
-    :token: 'Your DNSPod API Token'
+api:
+    id: 'API Token ID'
+    token: 'API Token'
+domain: '域名'
+sub_domain: '@'
+init_record_vale: '初始IP地址'
